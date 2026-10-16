@@ -8,7 +8,10 @@ import requests
 
 BACKEND_URL = "http://localhost:7860"
 
-
+#The URL is hardcoded to localhost, and it ignores the RAG_API_URL env var (which is correctly set to http://backend:7860 in the container
+#                                                                           
+import os  # at the top of the file, if not already there
+BACKEND_URL = os.getenv("RAG_API_URL", "http://localhost:7860")
 # ---------------------------------------------------------
 # Page configuration
 # ---------------------------------------------------------
