@@ -6,7 +6,7 @@ import requests
 # Configuration
 # ---------------------------------------------------------
 
-BACKEND_URL = "http://localhost:7860"
+#BACKEND_URL = "http://localhost:7860"
 
 #The URL is hardcoded to localhost, and it ignores the RAG_API_URL env var (which is correctly set to http://backend:7860 in the container
 #                                                                           
